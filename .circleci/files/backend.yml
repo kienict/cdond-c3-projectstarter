@@ -31,7 +31,9 @@ Resources:
       KeyName: udacity # If you use another key pair name, you should change this value to match.
       # If this ami id is not available for you, you can find another (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html)
       # Ubuntu 18 or higher works fine
-      ImageId: ami-068663a3c619dd892 
+      # Updated date: 2022.12.13
+      # Update note: change image to ubuntu
+      ImageId: ami-0a6b2839d44d781b2 # ami-068663a3c619dd892 
       Tags:
         - Key: Name
           Value: !Sub backend-${ID}
