@@ -1,5 +1,6 @@
 version: 2.1
 
+# trigger commit 2022.12.15
 commands:
   destroy-environment:
     description: Destroy back-end and front-end cloudformation stacks given a workflow ID.
