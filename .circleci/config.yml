@@ -298,6 +298,7 @@ jobs:
           name: Install dependencies
           command: |
             apk add --update --no-cache tar gzip nodejs npm aws-cli ansible
+            sudo apt install -y curl
       - run:
           name: Deploy backend
           command: |

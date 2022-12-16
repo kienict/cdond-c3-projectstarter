@@ -12,18 +12,18 @@
     path: ~/backend
     state: directory
 
-# - name: copy backend files
-#   become: yes
-#   copy:
-#     src: ~/project/artifact.tar.gz
-#     dest: ~/backend/artifact.tar.gz
+- name: copy backend files
+  become: yes
+  copy:
+    src: ~/project/artifact.tar.gz
+    dest: ~/backend/artifact.tar.gz
 
-# - name: unpack backend files
-#   become: yes
-#   shell: |
-#     cd ~/backend
-#     tar -vxf artifact.tar.gz
-#     rm -f artifact.tar.gz
+- name: unpack backend files
+  become: yes
+  shell: |
+    cd ~/backend
+    tar -vxf artifact.tar.gz
+    rm -f artifact.tar.gz
 
 - name: start app 
   become: yes
