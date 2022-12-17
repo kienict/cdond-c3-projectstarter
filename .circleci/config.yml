@@ -1,6 +1,5 @@
 version: 2.1
 
-# trigger build event
 commands:
   destroy-environment:
     description: Destroy back-end and front-end cloudformation stacks given a workflow ID.
